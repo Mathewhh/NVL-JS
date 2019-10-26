@@ -7,11 +7,23 @@
 <body>
 	<script type="text/javascript">
 
-	var Dia = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
-	var Ciudad= ["Madrid","Sevilla","Barcelona","Valencia","Zaragoza","Bilbao","Donosti"];
+	var dias = new Array();
 
+	var dias = new Array("lunes","martes","miércoles","jueves","viernes","sábado","domingo");
+
+	var ciudades = new Array();
+	var ciudades = new Array("Madrid","Sevilla","Barcelona","Valencia","Zaragoza","Bilbao","Donosti");
+
+	var conciertos = dias [0].concat(ciudades[0]) + " " + dias [1].concat(ciudades[1]) + " " + dias [2].concat(ciudades[2]) + " " + dias [3].concat(ciudades[3]) + " " + dias [4].concat(ciudades[4]) + " " + dias [5].concat(ciudades[5]) + " " + dias [6].concat(ciudades[6]);
+
+	console.log(conciertos);
+
+	//Array.prototype.push.apply(dias, ciudades);
 	
-	alert(Dia [1] + Ciudad [1]);
+	//console.log(dias);
+
+
+
 
 		
 
